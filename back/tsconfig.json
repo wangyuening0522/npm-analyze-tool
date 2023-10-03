@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "dist", //指定输出目录
+    "rootDir": "src", //解析ts文件的根目录
+    "module": "commonjs", //设置模块系统
+    "target": "es6", //指定es目标版本
+    "esModuleInterop": true // 允许module.exports=xxx 导出，由import from 导入.因为很多老的js库使用了commonjs的导出方式，并且没有导出default属性
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

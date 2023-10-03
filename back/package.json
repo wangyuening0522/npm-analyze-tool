@@ -1,0 +1,31 @@
+{
+  "name": "npm-analyze-tool",
+  "version": "1.0.0",
+  "description": "it is a tool for graphocally  analyzing npm package dependencies",
+  "main": "dist/index.js",
+  "bin": {
+ "aa":"./aa.js",
+ "n-cli":" ./dist/index.js"
+  },
+  "scripts": {
+    "test": "npm-analyze-tool",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangyuening0522/npm-analyze-tool.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "wangyuening",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangyuening0522/npm-analyze-tool/issues"
+  },
+  "homepage": "https://github.com/wangyuening0522/npm-analyze-tool#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
