@@ -1,0 +1,78 @@
+{
+  "npm-analyze-tool": {
+    "express": {
+      "accepts": {
+        "mime-types": {}
+      },
+      "body-parser": {
+        "debug": {},
+        "http-errors": {},
+        "iconv-lite": {},
+        "on-finished": {},
+        "qs": {
+          "side-channel": {
+            "call-bind": {
+              "function-bind": {},
+              "get-intrinsic": {
+                "function-bind": {}
+              }
+            },
+            "get-intrinsic": {
+              "function-bind": {}
+            }
+          }
+        },
+        "raw-body": {
+          "http-errors": {},
+          "iconv-lite": {}
+        },
+        "type-is": {
+          "mime-types": {}
+        }
+      },
+      "content-disposition": {},
+      "cookie-signature": {},
+      "debug": {},
+      "finalhandler": {
+        "debug": {},
+        "on-finished": {}
+      },
+      "http-errors": {},
+      "on-finished": {},
+      "proxy-addr": {
+        "ipaddr.js": {}
+      },
+      "qs": {
+        "side-channel": {
+          "call-bind": {
+            "function-bind": {},
+            "get-intrinsic": {
+              "function-bind": {}
+            }
+          },
+          "get-intrinsic": {
+            "function-bind": {}
+          }
+        }
+      },
+      "send": {
+        "debug": {},
+        "http-errors": {},
+        "mime": {},
+        "on-finished": {}
+      },
+      "serve-static": {
+        "send": {
+          "debug": {},
+          "http-errors": {},
+          "mime": {},
+          "on-finished": {}
+        }
+      },
+      "type-is": {
+        "mime-types": {}
+      },
+      "utils-merge": {}
+    }
+  }
+}
