@@ -24,7 +24,7 @@ function traverseDependencies(packagePath, result = {}, depth = Infinity, parent
         for (const dependency in dependencies) {
             // const dependencyPackage = dees[dependency];
             const dependencyPath = path_1.default.join(process.cwd(), "node_modules", dependency, "package.json");
-            console.log("我是每一次循环的package.json路径", dependencyPath);
+            //  console.log("我是每一次循环的package.json路径", dependencyPath);
             if (fs_1.default.existsSync(dependencyPath)) {
                 result[packageName][dependency] = traverseDependencies(dependencyPath, {}, depth - 1, [...parentDependencies, packageName])[dependency];
             }

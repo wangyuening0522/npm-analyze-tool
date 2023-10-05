@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>依赖关系图</title>
+  </head>
+  <style>
+	.all{
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		background-color: blue;
+		margin: 0;
+		padding: 0;
+	}
+    #box {
+      height: 100vh;
+      width: 70vw;
+      background-color: pink;
+    }
+	.right{
+		height: 100vh;
+		width: 30vw;
+		background-color: antiquewhite;
+	}
+  </style>
+  <body>
+   <div class="all">
+	<div id="box"></div>
+	<div class="right"></div>
+   </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+  <script src="./echart.js" type="module"></script>
+</html>

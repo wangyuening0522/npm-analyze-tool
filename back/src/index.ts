@@ -1,6 +1,6 @@
 // #!/usr/bin/env ts-node
-console.log("你好");
-console.log("我是第二次测试");
+// console.log("你好");
+// console.log("我是第二次测试");
 const { program } = require("commander");
 import { getPackageJsonPath } from "./utils/getPackageJsonPath";
 import { traverseDependencies } from "./utils/traverseDependencies";
@@ -9,6 +9,7 @@ import { saveDependencyGraph } from "./utils/saveDependencyGraph";
 import { checkMultipleVersions } from "./utils/checkMultipleVersions";
 import path from "path";
 //主执行函数
+let dependencyGraph;
 function main11(): void {
   try {
     const packageJsonPath = getPackageJsonPath();
@@ -16,9 +17,9 @@ function main11(): void {
     const depth = depthArg ? parseInt(depthArg.split("=")[1]) : Infinity;
     //遍历依赖
     /* async function test() { */
-    const dependencyGraph = traverseDependencies(packageJsonPath, {}, depth);
+    dependencyGraph = traverseDependencies(packageJsonPath, {}, depth);
     // console.log("dependencyGraph", dependencyGraph);
-    module.exports = dependencyGraph;
+    
     // console.log("全都看我", module.exports);
     /* const c = await 'c'
 	  }
@@ -60,4 +61,7 @@ function main11(): void {
  main11();
 module.exports = {
   main11,
+  dependencyGraph
 };
+console.log(module.exports);
+

@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 // #!/usr/bin/env ts-node
-console.log("你好");
-console.log("我是第二次测试");
+// console.log("你好");
+// console.log("我是第二次测试");
 const { program } = require("commander");
 const getPackageJsonPath_1 = require("./utils/getPackageJsonPath");
 const traverseDependencies_1 = require("./utils/traverseDependencies");
@@ -13,6 +13,7 @@ const saveDependencyGraph_1 = require("./utils/saveDependencyGraph");
 const checkMultipleVersions_1 = require("./utils/checkMultipleVersions");
 const path_1 = __importDefault(require("path"));
 //主执行函数
+let dependencyGraph;
 function main11() {
     try {
         const packageJsonPath = (0, getPackageJsonPath_1.getPackageJsonPath)();
@@ -20,9 +21,8 @@ function main11() {
         const depth = depthArg ? parseInt(depthArg.split("=")[1]) : Infinity;
         //遍历依赖
         /* async function test() { */
-        const dependencyGraph = (0, traverseDependencies_1.traverseDependencies)(packageJsonPath, {}, depth);
+        dependencyGraph = (0, traverseDependencies_1.traverseDependencies)(packageJsonPath, {}, depth);
         // console.log("dependencyGraph", dependencyGraph);
-        module.exports = dependencyGraph;
         // console.log("全都看我", module.exports);
         /* const c = await 'c'
           }
@@ -67,4 +67,6 @@ function main11() {
 main11();
 module.exports = {
     main11,
+    dependencyGraph
 };
+console.log(module.exports);

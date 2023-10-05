@@ -30,7 +30,7 @@ function traverseDependencies(
         dependency,
         "package.json"
       );
-       console.log("我是每一次循环的package.json路径", dependencyPath);
+      //  console.log("我是每一次循环的package.json路径", dependencyPath);
       if (fs.existsSync(dependencyPath)) {
         result[packageName][dependency] = traverseDependencies(
           dependencyPath,
