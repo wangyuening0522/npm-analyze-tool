@@ -1,0 +1,22 @@
+{
+  "name": "n-cli",
+  "version": "1.0.0",
+  "description": "a package of analyzing npm packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "npa"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangyuening0522/npm-analyze-tool.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "yn-BOb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangyuening0522/npm-analyze-tool/issues"
+  },
+  "homepage": "https://github.com/wangyuening0522/npm-analyze-tool#readme"
+}
