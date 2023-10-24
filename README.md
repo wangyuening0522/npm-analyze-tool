@@ -1,7 +1,10 @@
 # npm-analyze-tool
 这是一个图形化分析npm依赖包的工具
 # 背景
-了解子 package 之间形成了怎样的父子依赖关系
+当项目变大，依赖变多之后，常常会有些疑问，为了了解子 package 之间形成了怎样的父子依赖关系，所以产生了这个工具
+# 技术栈
+- typescript
+- nodejs
 # 使用方式
 1.json文件显示依赖包层次结构
   - cd到拥有node-moudules的文件夹目录下
